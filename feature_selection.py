@@ -289,6 +289,8 @@ def _(mo):
     The x-axis shows the log2 fold change (log_fc), and the y-axis shows the -log10 p-value. Genes that are significantly differentially expressed will appear in the upper left and upper right corners of the plot.
     Genes on the right are more highly expressed in the first subtype of the contrast, and vice versa.
     The further the gene is from the x=0 line, the larger the difference in expression between the two subtypes. The further up the gene is, the more statistically significant the difference is.
+
+    *This part was written by an llm as it is not substancial to the project*
     """)
     return
 
@@ -364,7 +366,7 @@ def _(contrast_names, np, plt, volcano_table):
     volcano_grid.supylabel("-log10 p-value")
     volcano_grid.tight_layout()
     volcano_grid
-    return (volcano_grid,)
+    return
 
 
 if __name__ == "__main__":
